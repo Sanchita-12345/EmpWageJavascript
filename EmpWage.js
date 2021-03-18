@@ -70,3 +70,8 @@ console.log("UC7B - Daily Wage Map" + mapDayWithWageArr);
 let fulltimeWage = (dailyWage) => dailyWage.includes("160");
 let fullDayWageArr = mapDayWithWageArr.filter(fulltimeWage);
 console.log("UC7C- Daily Wage filter when full wage earned" + fullDayWageArr);
+
+//UC7D - find the first occurrence when full time wage was earned using find function
+let findFullTimeWage =(dailyWage) => dailyWage.includes("160");
+let findFullTimeWageArr = mapDayWithWageArr.find(findFullTimeWage);
+console.log("UC7D - First time full time wage earned on Day: "+ findFullTimeWageArr);
